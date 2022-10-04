@@ -1,0 +1,43 @@
+##R studio
+
+##factors:
+##i -factors are used to represent categorical fata.Factors can be unordered or orderd # nolint
+##ii-one can think of a factor as an integer vector where each integer has a label # nolint
+
+##Data Frame
+##1.Data frame is used to store tabular Data.
+##2.data frame also have a special attribute called row.names.
+##3.Data frame are usually created by callling read.tabl.e() or read.csv()
+##4.Can be converted to matrix by calling data.matrix().
+##5.They are represent as a special type of list where every element of the list has to have the same length. # nolint
+##6.Each element of the list can be thought of a column and the length of each element of the list is the number of rows. # nolint
+
+##Example :
+##for (Data)
+dFrame<-data.frame(srNo=1:6,code=c('M','F','M','F')) # nolint
+
+
+class(dFrame) ##class of dFrame.
+nrow(dFrame) ##nummber of rows.
+ncol(dFrame)##number of column.
+
+
+##vectorized operation
+x<-1:4 # nolint
+y<-6:9 # nolint
+x+y # nolint
+
+Matrix
+##matrix are vectors with dimension attribute
+ thismatrix<-matrix(c(3,2,-1,1),nrow=2,ncol=2)
+M<-matrix(nrow = 2,ncol = 3) # nolint
+#binding
+mat1<-bind(x,y)
+
+sequences
+>seq(5,25,by=3)
+should have interval of 3 in between
+repetation
+rep(1:3,6)
+1 for 6,3 also for 6 times
+0
